@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+title: "HEAAF: Hybrid Explainable Adaptive Authentication Framework"
+message: "If you use this software, please cite the accompanying paper."
+authors:
+  - family-names: Mukherjee
+    given-names: Ritesh
+    affiliation: Manchester Metropolitan University
+license: MIT
+version: 2.0.0
+date-released: 2026-08-22

@@ -1,0 +1,13 @@
+\begin{tabular}{lrrr}
+\toprule
+Decision-path stage & p50 (ms) & p95 (ms) & p99 (ms) \\
+\midrule
+risk scoring (batch) & 0.0012 & 0.0012 & 0.0013 \\
+exact group Shapley (8 groups) & 0.4359 & 1.0277 & 1.4484 \\
+policy engine & 0.0000 & 0.0000 & 0.0000 \\
+Tier-1 explanation (Grad x Input) & 0.0017 & 0.0018 & 0.0018 \\
+Tier-1 explanation (IG-16) & 0.0282 & 0.0302 & 0.0310 \\
+end-to-end, single request (IG-16) & 1.2138 & 1.4844 & 1.5284 \\
+end-to-end, single request (exact group Shapley) & 0.6115 & 0.6759 & 0.7484 \\
+\bottomrule
+\end{tabular}

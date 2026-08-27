@@ -1,0 +1,19 @@
+\begin{tabular}{>{\raggedright\arraybackslash}p{2.7cm}r>{\raggedright\arraybackslash}p{3.2cm}>{\raggedright\arraybackslash}p{7.0cm}}
+\toprule
+Scenario & \% & Anchor incident class & Declared ground-truth drivers \\
+\midrule
+Stolen-credential remote login & 30 & Change Healthcare (2024) / 23andMe (2023) & \texttt{kd\_\allowbreak{}dist}, \texttt{dev\_\allowbreak{}unknown}, \texttt{geo\_\allowbreak{}novel}, \texttt{net\_\allowbreak{}zone\_\allowbreak{}risk} \\
+Post-intrusion lateral movement & 17 & HSHS (2023) ransomware intrusion & \texttt{time\_\allowbreak{}dev}, \texttt{res\_\allowbreak{}sens}, \texttt{peer\_\allowbreak{}dev}, \texttt{vol\_\allowbreak{}z} \\
+Insider privilege misuse & 20 & NHS ICO enforcement cases & \texttt{no\_\allowbreak{}care\_\allowbreak{}rel}, \texttt{vol\_\allowbreak{}z}, \texttt{peer\_\allowbreak{}dev} \\
+Third-party / vendor account abuse & 13 & MCNA Dental (2023) supply-chain breach & \texttt{net\_\allowbreak{}zone\_\allowbreak{}risk}, \texttt{time\_\allowbreak{}dev}, \texttt{vol\_\allowbreak{}z}, \texttt{res\_\allowbreak{}sens} \\
+IoMT gateway impersonation & 10 & Philips patient-monitor advisories (ICSMA-20-254-01) & \texttt{dev\_\allowbreak{}risk}, \texttt{dev\_\allowbreak{}unknown}, \texttt{res\_\allowbreak{}sens}, \texttt{auth\_\allowbreak{}age} \\
+Mid-session takeover (AiTM / token theft) & 10 & Adversary-in-the-middle MFA bypass & \texttt{kd\_\allowbreak{}dist}, \texttt{kd\_\allowbreak{}speed\_\allowbreak{}dev}, \texttt{peer\_\allowbreak{}dev}, \texttt{auth\_\allowbreak{}age} \\
+\midrule
+Unrostered night cover & -- & legitimate, unusual & \texttt{time\_\allowbreak{}dev}, \texttt{peer\_\allowbreak{}dev} \\
+Replacement workstation & -- & legitimate, unusual & \texttt{dev\_\allowbreak{}unknown} \\
+Locum / agency first shift & -- & legitimate, unusual & \texttt{peer\_\allowbreak{}dev}, \texttt{no\_\allowbreak{}care\_\allowbreak{}rel}, \texttt{dev\_\allowbreak{}unknown} \\
+Emergency (code-blue) access & -- & legitimate, unusual & \texttt{no\_\allowbreak{}care\_\allowbreak{}rel}, \texttt{vol\_\allowbreak{}z}, \texttt{emergency} \\
+Cross-ward cover & -- & legitimate, unusual & \texttt{no\_\allowbreak{}care\_\allowbreak{}rel}, \texttt{peer\_\allowbreak{}dev} \\
+Remote on-call review & -- & legitimate, unusual & \texttt{net\_\allowbreak{}zone\_\allowbreak{}risk}, \texttt{geo\_\allowbreak{}novel}, \texttt{time\_\allowbreak{}dev} \\
+\bottomrule
+\end{tabular}

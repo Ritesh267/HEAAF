@@ -1,0 +1,32 @@
+\begin{tabular}{p{1.5cm}>{\raggedright\arraybackslash}p{6.0cm}>{\raggedright\arraybackslash}p{5.4cm}}
+\toprule
+Component & Parameter & Value \\
+\midrule
+Q-network & hidden layers & [64, 64] \\
+ & learning rate (Adam) & 0.001 \\
+ & batch size & 128 \\
+ & replay capacity & 60{,}000 \\
+ & environment steps & 90{,}000 \\
+ & warm-up steps & 3{,}000 \\
+ & target sync interval & 750 \\
+ & $\varepsilon$ schedule & 1$\to$0.05 over 30{,}000 \\
+ & malicious fraction per minibatch & 0.5 \\
+ & gradient clip & 5 \\
+Reward & breach cost (base, sens.\ gain) & 6, 6 \\
+ & value of a frictionless allow & 0.2 \\
+ & friction (OTP / strong / deny) & 0.18 / 0.52 / 1.2 \\
+ & emergency penalty (OTP / strong / deny) & 0.2 / 0.8 / 3.6 \\
+ & correct challenge (OTP / strong / deny) & 1.2 / 2 / 2.4 \\
+ & discount $\gamma$ & 0.9 \\
+Policy & $\tau_{\text{low}}$ (set by friction budget) & 1\% benign quantile \\
+ & $\tau_{\text{high}}$ & $\tau_{\text{low}}+0.35$ \\
+ & sensitivity floor $\phi$ & 0.85 \\
+ & emergency relief $\rho$ & 0.12 \\
+Challenge & bypass prob.\ (OTP / strong) & 0.18 / 0.04 \\
+ & clinician seconds (OTP / strong / deny) & 8 / 25 / 45 \\
+Corpus & events (train) & 140{,}000 \\
+ & attack rate / hard-negative rate & 1.2\% / 6\% \\
+ & emergency rate & 3.5\% \\
+ & mean session length & 12 \\
+\bottomrule
+\end{tabular}

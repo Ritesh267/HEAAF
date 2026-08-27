@@ -1,0 +1,14 @@
+\begin{tabular}{lccccccc}
+\toprule
+& \multicolumn{6}{c}{Detection rate} & Driver \\
+\cmidrule(lr){2-7}
+Attack scenario & HEAAF & Ens. & Sup. & B3@b & B4@b & B5@b & hit@3 \\
+\midrule
+Stolen-credential remote login & 0.441 & 0.654 & \textbf{0.972} & 0.629 & \textbf{0.972} & 0.277 & 0.949 \\
+Post-intrusion lateral movement & 0.148 & 0.286 & 0.623 & 0.237 & \textbf{0.630} & 0.100 & 0.907 \\
+Insider privilege misuse & 0.154 & 0.343 & 0.558 & 0.116 & \textbf{0.580} & 0.151 & 0.857 \\
+Third-party / vendor account abuse & 0.074 & 0.209 & \textbf{0.717} & 0.082 & \textbf{0.717} & 0.077 & 0.867 \\
+IoMT gateway impersonation & 0.031 & 0.213 & \textbf{0.702} & 0.113 & \textbf{0.702} & 0.119 & 0.889 \\
+Mid-session takeover (AiTM / token theft) & 0.082 & 0.179 & \textbf{0.352} & 0.102 & \textbf{0.352} & 0.094 & 1.000 \\
+\bottomrule
+\end{tabular}

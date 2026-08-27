@@ -1,0 +1,30 @@
+\begin{tabular}{p{2.1cm}p{2.5cm}>{\raggedright\arraybackslash}p{8.2cm}}
+\toprule
+Semantic group & Feature & Meaning (oriented so larger $=$ more suspicious) \\
+\midrule
+\multirow{3}{*}{Keystroke dynamics} & \texttt{kd\_\allowbreak{}dist} & typing rhythm differs from the enrolled template \\
+ & \texttt{kd\_\allowbreak{}speed\_\allowbreak{}dev} & typing speed is unusual for this user \\
+ & \texttt{kd\_\allowbreak{}flight\_\allowbreak{}var} & key-transition timing is unusually irregular \\
+\addlinespace[2pt]
+\multirow{2}{*}{Device posture} & \texttt{dev\_\allowbreak{}unknown} & the device has not been used by this account before \\
+ & \texttt{dev\_\allowbreak{}risk} & the endpoint is shared or fails posture checks \\
+\addlinespace[2pt]
+\multirow{3}{*}{Network and location} & \texttt{net\_\allowbreak{}zone\_\allowbreak{}risk} & the connection originates outside the clinical network \\
+ & \texttt{geo\_\allowbreak{}novel} & the access location is new for this account \\
+ & \texttt{impossible\_\allowbreak{}travel} & the location is unreachable since the last login \\
+\addlinespace[2pt]
+\multirow{1}{*}{Temporal context} & \texttt{time\_\allowbreak{}dev} & the access falls outside the rostered shift pattern \\
+\addlinespace[2pt]
+\multirow{2}{*}{Access pattern} & \texttt{vol\_\allowbreak{}z} & the volume of records accessed is far above normal \\
+ & \texttt{no\_\allowbreak{}care\_\allowbreak{}rel} & there is no recorded care relationship with this patient \\
+\addlinespace[2pt]
+\multirow{1}{*}{Peer-group behaviour} & \texttt{peer\_\allowbreak{}dev} & the behaviour deviates from the role peer group \\
+\addlinespace[2pt]
+\multirow{2}{*}{Session assurance} & \texttt{auth\_\allowbreak{}age} & strong authentication has not been performed recently \\
+ & \texttt{fail\_\allowbreak{}recent} & recent authentication failures on this account \\
+\addlinespace[2pt]
+\multirow{2}{*}{Clinical context} & \texttt{res\_\allowbreak{}sens} & the requested record or function is highly sensitive \\
+ & \texttt{emergency} & an emergency clinical context is declared \\
+\addlinespace[2pt]
+\bottomrule
+\end{tabular}
